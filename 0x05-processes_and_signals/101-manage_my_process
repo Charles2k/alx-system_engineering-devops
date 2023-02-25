@@ -1,48 +1,29 @@
 #!/usr/bin/env bash
-# Process Manager.
+# manages manage_my_process by either starting it, stopping it or restarting it.
 
-FILE="/var/run/my_process.pid"
+command="$1"
 
-function error()
-{
-    echo "Usage: manage_my_process {start|stop|restart}"
-}
+if [ -z "$command" ]; then
+  echo "Usage: manage_my_process {start|stop|restart}"
+  exit
+fi
 
-function start()
-{
-    (./manage_my_process) &
-    echo $$ > $FILE
-    echo "manage_py_process started"
-}
+if [ "$command" == "start" ]; then
 
-function stop()
-{
-    pkill -f ./manage_my_process
-    sudo rm $FILE
-    echo "manage_my_process stopped"
-}
+  bash ./manage_my_process &
+  echo "$!" > /var/run/my_process.pid
+  echo "manage_my_process started"
 
-function restart()
-{
-    pkill -f ./manage_my_process
-    rm $FILE
-    ./manage_my_process &
-    echo $$ > $FILE
-    echo "manage_my_process restarted"
-}
+elif [ "$command" == "stop" ]; then
+  [ -e "/var/run/my_process.pid" ] && pkill -f './manage_my_process' && rm /var/run/my_process.pid
+  echo "manage_my_process stopped"
 
-if [ $# -ne 1 ];
-then
-    error
+elif [ "$command" == "restart" ]; then
+
+  "$0" stop >& /dev/null
+  "$0" start >& /dev/null
+  echo "manage_my_process restarted"
+
 else
-    case ${1} in
-    	"start")
-    	    start;;
-    	"restart")
-    	    restart;;
-    	"stop")
-    	    stop;;
-    	*)
-    	    error;;
-    esac
+  echo "Usage: manage_my_process {start|stop|restart}"
 fi
