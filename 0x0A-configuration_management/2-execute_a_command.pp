@@ -1,4 +1,4 @@
-# Calling pkill
-exec { 'killmenow':
-  command => '/usr/bin/pkill -f killmenow'
+# Executes a command
+exec { 'pkill killmenow':
+  path => '/usr/bin:/usr/sbin:/bin'
 }

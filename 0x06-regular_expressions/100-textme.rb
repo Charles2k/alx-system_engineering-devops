@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-# Using non-greedy way
-puts ARGV[0].scan(/\[(?:from|to|flags):(.*?)\]/ix).join(',')
+ptn = /(?:(?<=from:)(?:\p{L}+|\+?\d+)|(?<=to:)(?:\p{L}+|\+?\d*)|(?<=flags:)(?:-?\d+:?)*)/
+puts ARGV[0].scan(ptn).join(',')

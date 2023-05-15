@@ -1,25 +1,9 @@
-# Command line for the win
+# Command Line For The Win
 
-![error-img](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/324/06AChAO.png)
+This project contains solutions to some of the bash command challenges at [cmdchallenge](https://cmdchallenge.com/). See [Solutions](Solutions.md).
 
-## Description :cat:
+## Tasks to Complete
 
-* The CMD CHALLENGE Directed Project is a cool game that challenges you in Bash skills. Everything is done through the command line and the questions are getting more complicated. It's a good workout to improve skills on the command line!
-
-- Here I will leave the complete write up in case they are difficult for some:
-[click here](https://medium.com/@estebandelahoz/commandile-challenge-bash-c06f777fbc78)
-
-
-## Advanced Tasks :light_rail:
-
-| Files | Description |
-| ----- | ----------- |
-| 0. First 九 tasks  | Complete the first 9 tasks. |
-| 1. Reach חי completed tasks   |Complete the 9 next tasks, getting to 18 total.|
-| 2. Reach the perfect cube, 27 | Complete the 9 next tasks, getting to 27 total.
-
-
-## Author :octocat:
-
-[Esteban De La Hoz](https://www.linkedin.com/in/esteban-de-la-hoz-romero-b6270017b/) | [Twitter](https://twitter.com/Esteban18911) | [GitHub](https://github.com/Esteban18911)
- 
++ 1. [x] First 九 tasks<br/>**_[0-first_9_tasks.png](0-first_9_tasks.png)_** Shows the completion of the first 9 tasks.
++ 1. [x] Reach חי completed tasks<br/>**_[1-next_9_tasks.png](1-next_9_tasks.png)_** Shows the completion of the next 9 (the first 18) tasks.
++ 2. [x] Reach the perfect cube, 27<br/>**_[2-next_9_tasks.png](2-next_9_tasks.png)_** Shows the completion of the next 9 (the first 27) tasks.

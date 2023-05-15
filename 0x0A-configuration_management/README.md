@@ -1,18 +1,23 @@
-# 0x0A-ssh
+# Configuration Management
 
-## Description
+This project contains tasks for learning about configuration management using Puppet (the Ruby gem).
 
-Learning about creating and setting up ssh keys.
+## Tasks To Complete
 
-## Mandatory Tasks
++ [x] 0\. Create a file<br/>_**[0-create_a_file.pp](0-create_a_file.pp)**_ creates a file in `/tmp` using Puppet.
+  + Requirements:
+    + File path is `/tmp/school`.
+    + File permission is `0744`.
+    + File owner is `www-data`.
+    + File group is `www-data`.
+    + File contains `I love Puppet`.
 
-| Files | Description |
-| ----- | ----------- |
-| 0-use_a_private_key | Bash script that uses `ssh` to connect to your server using the private key `~/.ssh/holberton` with the user `ubuntu` |
-| 1-create_ssh_key_pair | Bash script that creates a RSA key pair |
-| 2-ssh_config | Configuring the ssh config file of a Vagrant machine running Ubuntu 14.04 |
++ [x] 1\. Install a package<br/>_**[1-install_a_package.pp](1-install_a_package.pp)**_ installs `puppet-lint` using Puppet.
+  + Requirements:
+    + Install `puppet-lint`.
+    + Version must be `2.5.0`.
 
-
-
-
-
++ [x] 2\. Execute a command<br/>_**[2-execute_a_command.pp](2-execute_a_command.pp)**_ creates a manifest that kills a process named `killmenow` using Puppet.
+  + Requirements:
+    + Must use the `exec` Puppet resource.
+    + Must use `pkill`.

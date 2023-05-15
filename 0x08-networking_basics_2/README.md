@@ -1,24 +1,11 @@
-# 0x08-networking_basics_2
+# Networking Basics 2
 
-## Description
+This project contains tasks for learning more about the basics of networking with **Bash**.
 
-This projects deals with basics of networks and introduces concepts that are key to being a good systems administrator.
+## Tasks To Complete
 
-## Mandatory Tasks
-
-| Files | Description |
-| ----- | ----------- |
-| 0-local | Answer file for a question about `localhost` |
-| 1-wildcard | Answer file for a question about what the IP 0.0.0.0 is |
-| 2-change_your_home_IP | Configures an Ubuntu server with certain requirments |
-| 3-port_listening_on_localhost | Displays all active IPv4 IPs on the machine it is executed on |
-
-## Advanced Task
-
-| Files | Description |
-| ----- | ----------- |
-| 4-port_listening_on_localhost | Listens to port `98` on `localhost` |
-
-## Author :octocat:
-
-[Esteban De La Hoz](https://www.linkedin.com/in/esteban-de-la-hoz-romero-b6270017b/) | [Twitter](https://twitter.com/Esteban18911) | [GitHub](https://github.com/Esteban18911)
++ [x] 0\. Change your home IP <br/>_**[0-change_your_home_IP](0-change_your_home_IP)**_ contains a Bash script that configures an Ubuntu server with the following requirements:
+  + `localhost` resolves to `127.0.0.2`.
+  + `facebook.com` resolves to `8.8.8.8`.
++ [x] 1\. Show attached IPs <br/>_**[1-show_attached_IPs](1-show_attached_IPs)**_ contains a Bash script that displays all active IPv4 IPs on the machine it’s executed on.
++ [x] 2\. Port listening on localhost <br/>_**[100-port_listening_on_localhost](100-port_listening_on_localhost)**_ contains a Bash script that listens on port `98` on `localhost`.
